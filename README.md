@@ -32,5 +32,6 @@ git clone https://github.com/dungtruong151/2d-skiing-simulator
 ## References <a name="references"></a> 
 [1] Unity 2D Platformer for Complete Beginners 
 https://www.youtube.com/watch?v=TcranVQUQ5U&list=PLgOEwFbvGm5o8hayFB6skAfa8Z-mw4dPV
+
 [2] Physics for a 2D skiing game
 https://discussions.unity.com/t/physics-for-a-2d-skiing-game/873674
