@@ -12,13 +12,6 @@ public class CoinController : MonoBehaviour
         {
             isCollected = true;
 
-            // Gọi PlayerController để cộng điểm
-            PlayerController playerController = other.GetComponent<PlayerController>();
-            if (playerController != null)
-            {
-                playerController.AddScore(1);
-            }
-
             // Hiển thị hiệu ứng
             if (collectEffect != null)
             {
@@ -30,6 +23,9 @@ public class CoinController : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(collectSound, Camera.main.transform.position);
             }
+
+            // Cộng điểm
+            FindObjectOfType<GameManager>().AddScore(1);
 
             // Hủy đối tượng đồng xu
             Destroy(gameObject);

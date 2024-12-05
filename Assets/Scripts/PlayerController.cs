@@ -1,13 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Namespace cho TextMeshPro
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float torqueAmount = 15f;
     [SerializeField] private float boostSpeed = 45f;
     [SerializeField] private float normalSpeed = 25f;
-    [SerializeField] private TextMeshProUGUI scoreText; // Dùng TextMeshProUGUI
-    private int score = 0; // Biến lưu điểm
     private bool canPlay;
     private Rigidbody2D _rb2D;
     private SurfaceEffector2D _surfaceEffector2D;
@@ -17,9 +17,6 @@ public class PlayerController : MonoBehaviour
         canPlay = true;
         _rb2D = GetComponent<Rigidbody2D>();
         _surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>();
-
-        // Cập nhật điểm số ban đầu
-        UpdateScoreUI();
     }
 
     private void Update()
@@ -52,27 +49,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            _rb2D.AddTorque(torqueAmount * Time.deltaTime);
+            _rb2D.AddTorque(torqueAmount);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            _rb2D.AddTorque(-torqueAmount * Time.deltaTime);
-        }
-    }
-
-    // Hàm để thêm điểm
-    public void AddScore(int amount)
-    {
-        score += amount;
-        UpdateScoreUI();
-    }
-
-    // Hàm cập nhật UI
-    private void UpdateScoreUI()
-    {
-        if (scoreText != null)
-        {
-            scoreText.text = "Score: " + score;
+            _rb2D.AddTorque(-torqueAmount);
         }
     }
 }
