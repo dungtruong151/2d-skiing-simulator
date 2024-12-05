@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro; // Namespace cho TextMeshPro
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float torqueAmount = 15f;
     [SerializeField] private float boostSpeed = 45f;
     [SerializeField] private float normalSpeed = 25f;
-    [SerializeField] private Text scoreText; // Thêm tham chiếu đến UI Text
+    [SerializeField] private TextMeshProUGUI scoreText; // Dùng TextMeshProUGUI
     private int score = 0; // Biến lưu điểm
     private bool canPlay;
     private Rigidbody2D _rb2D;

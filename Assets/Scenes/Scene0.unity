@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 116051944}
   m_Layer: 0
   m_Name: Crash Effect
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10983,7 +10983,7 @@ GameObject:
   - component: {fileID: 472017870}
   m_Layer: 0
   m_Name: Boarder_Top
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11133,7 +11133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.17901, y: 9.22, z: -10}
+  m_LocalPosition: {x: -40.779594, y: 9.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11773,7 +11773,7 @@ GameObject:
   - component: {fileID: 733886012}
   m_Layer: 0
   m_Name: Coins
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12414,7 +12414,7 @@ MonoBehaviour:
   torqueAmount: 15
   boostSpeed: 45
   normalSpeed: 25
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1155885430}
 --- !u!114 &998477929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13566,7 +13566,7 @@ GameObject:
   - component: {fileID: 1260427801}
   m_Layer: 0
   m_Name: Dust Trail
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21037,7 +21037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014439642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.17901, y: 9.22, z: -10}
+  m_LocalPosition: {x: -40.779594, y: 9.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21309,7 +21309,7 @@ GameObject:
   - component: {fileID: 2063722226}
   m_Layer: 0
   m_Name: Boarder_Bottom
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21398,12 +21398,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3239446570729941290, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7097
+      objectReference: {fileID: 0}
+    - target: {fileID: 3239446570729941290, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7339
+      objectReference: {fileID: 0}
+    - target: {fileID: 3239446570729941290, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.4
+      value: -42.99
       objectReference: {fileID: 0}
     - target: {fileID: 3239446570729941290, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 3239446570729941290, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21440,6 +21448,14 @@ PrefabInstance:
     - target: {fileID: 6746384247758245728, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951475138300168730, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951475138300168730, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f195a4b937800d84f93a84dc2bbf05a7, type: 3}
