@@ -17,7 +17,7 @@ git clone https://github.com/dungtruong151/2d-skiing-simulator
 ### Our team member
 | Index | Name                   |     ID      |              Email               | Github             |
 |:------|:-----------------------|:-----------:|:--------------------------------:|:---------------------------|
-| 1     | Trương Trí Dũng (Leader)| ITCSIU21219 | dungtruong151@gmail.com | dungtruong151 |       
+| 1     | Trương Trí Dũng (Leader)| ITCSIU21219 | ttdung.work@gmail.com | dungtruong151 |       
 | 2     | Nguyễn Huỳnh Thảo My | ITCSIU21204 | thaomypc2003@gmail.com | my003 |
 ## Features <a name="feature"></a> 
 **Main Feature:**  
